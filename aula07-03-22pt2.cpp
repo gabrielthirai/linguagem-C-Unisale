@@ -1,9 +1,11 @@
 #include <iostream>
+#include <locale>
 using namespace std;
 main(){
+    setlocale(LC_ALL, "Portuguese");
     int numfunc, qtdfilhos;
     float numh, vlrh, salfunc, acres;
-    cout<<"Informe o numero de funcionarios ";
+    cout<<"Informe o numero de funcionario ";
     cin>>numfunc;
     cout<<"Informe o numero de horas trabalhadas ";
     cin>>numh;
