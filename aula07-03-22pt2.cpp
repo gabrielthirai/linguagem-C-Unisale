@@ -2,7 +2,7 @@
 using namespace std;
 main(){
     int numfunc, qtdfilhos;
-    float numh, vlrh, salfunc, acres, salfinal;
+    float numh, vlrh, salfunc, acres;
     cout<<"Informe o numero de funcionarios ";
     cin>>numfunc;
     cout<<"Informe o numero de horas trabalhadas ";
@@ -13,6 +13,5 @@ main(){
     cin>>qtdfilhos;
     salfunc=(numh*vlrh);
     acres=(salfunc*0.10) * qtdfilhos;
-    salfinal=(salfunc+acres);
-    cout<<salfinal;
+    cout<<"Seu salario é de: "<<(salfunc+acres);
 }
