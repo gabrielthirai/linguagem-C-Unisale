@@ -2,7 +2,7 @@
 using namespace std;
 main()
 {
-    int valor1;
-    valor1=5+10;
-    cout<<((valor1/2)*valor1);
+    int valor;
+    valor=5+10;
+    cout<<((valor/2)*valor);
 }
