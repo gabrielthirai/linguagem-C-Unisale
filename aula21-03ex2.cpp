@@ -12,7 +12,7 @@ main()
     {
         cout<<"é par";
     }
-    else
+    else 
     {
         cout<<"é impar";
     }
