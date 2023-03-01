@@ -24,7 +24,7 @@ public:
     float getNota2();
     int getFaltas();
 
-    float calcularMedia();
+    float CalcularMedia();
     void VerificarStatus();
     void PassarDeAno();
 };
@@ -66,4 +66,25 @@ float TAluno::getNota2(){
 }
 int TAluno::getFaltas(){
     return Faltas;
+}
+
+float TAluno::CalcularMedia(){
+    float Media;
+
+    Media=(getNota1()+getNota2())/2;
+    return Media;
+}
+
+void TAluno::VerificarStatus(){
+    float Media;
+
+    Media = CalcularMedia();
+
+    if(Media >= 7){
+        cout<<"Aluno aprovado";
+    }else if(Media<=3){
+        cout<<"Aluno de exame";
+    }else{
+        cout<<"DP";
+    }
 }
